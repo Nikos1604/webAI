@@ -1,0 +1,150 @@
+
+<html lang="czs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tým - Los Angeles Lakers</title>
+    <meta name="description" content="Current roster of the Los Angeles Lakers basketball team">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        lakersPurple: "#552583",
+                        lakersGold: "#FDB927",
+                        lakersBlack: "#000000"
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="min-h-screen bg-gray-100">
+    <!-- Header with navigation -->
+    <header class="bg-lakersPurple text-white shadow-lg">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <img src="https://picsum.photos/50?random=1" alt="Lakers logo" class="w-10 h-10 rounded-full">
+                    <h1 class="text-xl font-bold">LAKERS</h1>
+                </div>
+                <nav class="hidden md:block">
+                    <ul class="flex space-x-6">
+                        <li><a href="index.html" class="hover:text-lakersGold transition">Vychozí stránka</a></li>
+                        <li><a href="roster.html" class="font-bold text-lakersGold hover:text-white transition">Tým</a></li>
+                    </ul>
+                </nav>
+                <button class="md:hidden text-white">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main content -->
+    <main class="container mx-auto px-4 py-8">
+        <section class="mb-8">
+            <h1 class="text-3xl font-bold text-lakersPurple mb-6">2023-24 Los Angeles Lakers tým</h1>
+            
+            <div class="bg-white rounded-lg shadow-md overflow-hidden mb-8">
+                <div class="p-6">
+                    <h2 class="text-xl font-bold text-lakersPurple mb-4">Trenéři a Asistenti</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                        <div class="border border-gray-200 rounded-lg p-4">
+                            <h3 class="font-bold text-lg">Darvin Ham</h3>
+                            <p class="text-gray-600">Hlavní trenér</p>
+                        </div>
+                        <div class="border border-gray-200 rounded-lg p-4">
+                            <h3 class="font-bold text-lg">Phil Handy</h3>
+                            <p class="text-gray-600">Asistent trenéra</p>
+                        </div>
+                        <div class="border border-gray-200 rounded-lg p-4">
+                            <h3 class="font-bold text-lg">Chris Jent</h3>
+                            <p class="text-gray-600">Asistent trenéra</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <div class="p-6">
+                    <h2 class="text-xl font-bold text-lakersPurple mb-4">Hráči</h2>
+                    <div class="overflow-x-auto">
+                        <table class="min-w-full divide-y divide-gray-200">
+                            <thead class="bg-gray-50">
+                                <tr>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Number</th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Player</th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Position</th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Height</th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Age</th>
+                                </tr>
+                            </thead>
+                            <tbody class="bg-white divide-y divide-gray-200">
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-nowrap font-bold">6</td>
+                                    <td class="px-6 py-4 whitespace-nowrap">LeBron James</td>
+                                    <td class="px-6 py-4 whitespace-nowrap">Forward</td>
+                                    <td class="px-6 py-4 whitespace-nowrap">6'9"</td>
+                                    <td class="px-6 py-4 whitespace-nowrap">38</td>
+                                </tr>
+                                <tr class="bg-gray-50">
+                                    <td class="px-6 py-4 whitespace-nowrap font-bold">3</td>
+                                    <td class="px-6 py-4 whitespace-nowrap">Anthony Davis</td>
+                                    <td class="px-6 py-4 whitespace-nowrap">Forward-Center</td>
+                                    <td class="px-6 py-4 whitespace-nowrap">6'10"</td>
+                                    <td class="px-6 py-4 whitespace-nowrap">30</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-nowrap font-bold">1</td>
+                                    <td class="px-6 py-4 whitespace-nowrap">D'Angelo Russell</td>
+                                    <td class="px-6 py-4 whitespace-nowrap">Guard</td>
+                                    <td class="px-6 py-4 whitespace-nowrap">6'4"</td>
+                                    <td class="px-6 py-4 whitespace-nowrap">27</td>
+                                </tr>
+                                <tr class="bg-gray-50">
+                                    <td class="px-6 py-4 whitespace-nowrap font-bold">15</td>
+                                    <td class="px-6 py-4 whitespace-nowrap">Austin Reaves</td>
+                                    <td class="px-6 py-4 whitespace-nowrap">Guard</td>
+                                    <td class="px-6 py-4 whitespace-nowrap">6'5"</td>
+                                    <td class="px-6 py-4 whitespace-nowrap">25</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-nowrap font-bold">28</td>
+                                    <td class="px-6 py-4 whitespace-nowrap">Rui Hachimura</td>
+                                    <td class="px-6 py-4 whitespace-nowrap">Forward</td>
+                                    <td class="px-6 py-4 whitespace-nowrap">6'8"</td>
+                                    <td class="px-6 py-4 whitespace-nowrap">25</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-lakersPurple text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h3 class="text-xl font-bold mb-2">LAKERS </h3>
+                    <p class="text-lakersGold">Oficiální fanouškovské stránky Los Angeles Lakers</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-white hover:text-lakersGold transition"><i class="fab fa-facebook-f text-xl"></i></a>
+                    <a href="#" class="text-white hover:text-lakersGold transition"><i class="fab fa-twitter text-xl"></i></a>
+                    <a href="#" class="text-white hover:text-lakersGold transition"><i class="fab fa-instagram text-xl"></i></a>
+                    <a href="#" class="text-white hover:text-lakersGold transition"><i class="fab fa-youtube text-xl"></i></a>
+                </div>
+            </div>
+            <div class="border-t border-lakersGold mt-6 pt-6 text-center">
+                <p>&copy; 2023 Lakers Nation.Vytvořené AI .</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

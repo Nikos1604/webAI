@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Oficiální fanouškovský web</title>
+    <meta name="description" content="Official fan site of the Los Angeles Lakers basketball team">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        lakersPurple: "#552583",
+                        lakersGold: "#FDB927",
+                        lakersBlack: "#000000"
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="min-h-screen bg-gray-100">
+    <!-- Header with navigation -->
+    <header class="bg-lakersPurple text-white shadow-lg">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <img src="https://picsum.photos/50?random=1" alt="Lakers logo" class="w-10 h-10 rounded-full">
+                    <h1 class="text-xl font-bold">LAKERS</h1>
+                </div>
+                <nav class="hidden md:block">
+                    <ul class="flex space-x-6">
+                        <li><a href="index.html" class="font-bold text-lakersGold hover:text-white transition">Vychozí stránka</a></li>
+                        <li><a href="roster.html" class="hover:text-lakersGold transition">Tým</a></li>
+                    </ul>
+                </nav>
+                <button class="md:hidden text-white">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main content -->
+    <main class="container mx-auto px-4 py-8">
+        <section class="mb-12">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="https://picsum.photos/1200/400?random=2" alt="Lakers team photo" class="w-full h-64 object-cover" loading="lazy">
+                <div class="p-6">
+                    <h2 class="text-3xl font-bold text-lakersPurple mb-4">Vítejte v Lakers Nation</h2>
+                    <p class="text-gray-700 mb-4">Los Angeles Lakers jsou americký profesionální basketbalový tým se sídlem v Los Angeles. Lakers soutěží v National Basketball Association (NBA) jako člen Západní konference Pacifické divize ligy.</p>
+                    <p class="text-gray-700 mb-6">S 17 tituly NBA jsou Lakers na stejné úrovni jako Boston Celtics v počtu titulů v historii NBA. Tato franšíza měla některé z největších hráčů v historii basketbalu, včetně Magica Johnsona, Kareema Abdul-Jabbara, Shaquille O'Neala, Kobeho Bryanta a LeBrona Jamese.</p>
+                    <a href="roster.html" class="bg-lakersGold text-lakersPurple font-bold py-2 px-6 rounded hover:bg-yellow-300 transition">Kouknout se na tým</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-lakersPurple mb-6">Novinky</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://www.irozhlas.cz/sites/default/files/styles/zpravy_facebook/public/uploader/2021-10-09t031740z_8_211025-094523_mim.JPG" alt="Lakers game action" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg mb-2">Lakers vyhráli úvodní zápas sezóny</h3>
+                        <p class="text-gray-600 text-sm mb-3">October 24, 2023</p>
+                        <p class="text-gray-700">Lakers zahájili sezónu silně vítězstvím 119:107 nad Denver Nuggets.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://cdn.i-scmp.com/sites/default/files/styles/wide_landscape/public/d8/images/canvas/2024/09/30/001cab3d-8ad6-431d-9804-bace6cc5be9d_eac725ad.jpg?itok=07s9Q5S5&v=1727688640" alt="Lakers player interview" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg mb-2">Rozhovor s novým trenérem</h3>
+                        <p class="text-gray-600 text-sm mb-3">October 20, 2023</p>
+                        <p class="text-gray-700">Hlavní trenér Darvin Ham hovoří o své vizi pro tým v této sezóně</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://i.ytimg.com/vi/hYeC4jUXlQk/maxresdefault.jpg" alt="Lakers arena" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg mb-2">Staples Center Rekonstrukce</h3>
+                        <p class="text-gray-600 text-sm mb-3">October 15, 2023</p>
+                        <p class="text-gray-700">
+Domov Lakers se v sezóně 2023-24 dočká zásadní modernizace.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-lakersPurple text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h3 class="text-xl font-bold mb-2">LAKERS</h3>
+                    <p class="text-lakersGold">Oficiální fanouškovské stránky Los Angeles Lakers</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-white hover:text-lakersGold transition"><i class="fab fa-facebook-f text-xl"></i></a>
+                    <a href="#" class="text-white hover:text-lakersGold transition"><i class="fab fa-twitter text-xl"></i></a>
+                    <a href="#" class="text-white hover:text-lakersGold transition"><i class="fab fa-instagram text-xl"></i></a>
+                    <a href="#" class="text-white hover:text-lakersGold transition"><i class="fab fa-youtube text-xl"></i></a>
+                </div>
+            </div>
+            <div class="border-t border-lakersGold mt-6 pt-6 text-center">
+                <p>&copy; 2023 Lakers Nation. Vytvořené AI.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
